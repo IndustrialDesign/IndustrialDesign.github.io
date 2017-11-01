@@ -1,0 +1,369 @@
+@font-face {
+  font-family: "HKGrotesk";
+  src: url("../fonts/hkgrotesk-light.woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("../fonts/leaguespartan-bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  min-width: 1360px;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  background-color: #272f45;
+  color: #ffffff;
+  font-family: "HKGrotesk", "Arial", sans-serif;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-bottom: 50px;
+}
+
+.header-logo {
+  float: left;
+  margin-top: 64px;
+}
+
+.main-header form {
+  float: right;
+  position: relative;
+}
+
+.main-header input {
+  background-color: #272f45;
+  border: none;
+  border-bottom: 3px solid #63757e;
+  width: 176px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  vertical-align: middle;
+  margin-top: 67px;
+  padding-left: 30px;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "HKGrotesk";
+}
+
+.header-search input::-webkit-input-placeholder {
+  color: #92a1a9;
+  font-size: 24px;
+  font-family: "HKGrotesk";
+}
+
+.search-label {
+  position: absolute;
+  background: url("../img/search.png") no-repeat 0 0;
+  width: 22px;
+  height: 23px;
+  top: 83px;
+  left: 0;
+}
+
+.main-offer {
+  margin-bottom: 40px;
+  background-image: url("../img/main-offer.jpg");
+  position: relative;
+}
+
+.offer-title {
+  padding-top: 143px;
+  padding-left: 58px;
+  display: inline-block;
+  font-family: "LeagueSpartan";
+  font-size: 80px;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+}
+
+.main-offer::before {
+  position: absolute;
+  content: "";
+  width: 112px;
+  height: 115px;
+  background: url("../img/badge.png") no-repeat 0 0;
+  top: 37px;
+  right: 37px;
+}
+
+.offer-text {
+  width: 365px;
+  padding-left: 60px;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 138px;
+  font-weight: 300px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  border: 3px solid #eec9a2;
+  padding: 14px 0 16px;
+  vertical-align: top;
+}
+
+.offer-btn {
+  margin-left: 60px;
+  width: 154px;
+  margin-bottom: 116px;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+.btn:active {
+  text-decoration: none;
+}
+
+.catalog-item .btn {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  height: 48px;
+  width: 120px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "LeagueSpartan";
+  line-height: 18px;
+  padding: 14px 0 13px 0;
+}
+
+.catalog-item {
+  float: left;
+  margin-right: 40px;
+  box-sizing: border-box;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 30px #abcdef;
+}
+
+.beoplay, .leica {
+  width: 560px;
+  height: 520px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+
+.catalog-item:nth-child(2), .catalog-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-item:nth-child(n+3) {
+  width: 360px;
+  height: 440px;
+  text-align: center;
+}
+
+.catalog-item:first-child {
+  padding-right: 30px;
+  text-align: right;
+}
+
+.beoplay h2, .leica h2 {
+  font-size: 48px;
+  font-family: "LeagueSpartan";
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-weight: 700px;
+}
+
+.leica {
+  padding-left: 27px;
+}
+
+.beoplay p {
+  padding-left: 80px;
+  margin-bottom: 63px;
+  line-height: 27px;
+}
+
+.leica p {
+  width: 440px;
+  margin-bottom: 63px;
+  line-height: 27px;
+}
+
+.catalog-item:nth-child(3), .catalog-item:nth-child(5) {
+  padding-top: 48px;
+}
+
+.catalog-item:nth-child(n+3) p {
+  margin-bottom: 6px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.catalog-item:nth-child(n+3) h2 {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-family: "LeagueSpartan";
+  font-weight: bold;
+}
+
+.catalog-item:nth-child(4) {
+  padding-top: 242px;
+}
+
+.catalog {
+  margin-bottom: 152px;
+}
+
+.beoplay {
+  background-image: url("../img/p1.jpg");
+  background-color: #60b8a3;
+}
+
+.leica {
+  background-image: url("../img/p2.jpg");
+  background-color: #7778c6;
+}
+
+.molecule {
+  background-image: url("../img/p3.jpg");
+  background-color: #e97864;
+}
+
+.p9 {
+  background-image: url("../img/p4.jpg");
+  background-color: #557581;
+}
+
+.dr {
+  background-image: url("../img/p5.jpg");
+  background-color: #82c9d8;
+}
+
+.title-form {
+  font-size: 36px;
+  color: #92a1a9;
+  line-height: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.description-form {
+  font-size: 18px;
+  line-height: 24px;
+  color: #92a1a9;
+  width: 810px;
+  text-align: center;
+  margin-left: 180px;
+  margin-bottom: 45px;
+}
+
+.subscribe {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.subscribe-form input {
+  width: 360px;
+  padding: 16px 0 12px;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+.subscribe-form input[type="text"] {
+  margin-bottom: 20px;
+  text-align: center;
+  background: #272f45;
+  color: #92a1a9;
+  border: 3px solid #92a1a9;
+}
+
+.subscribe-form input[type="submit"] {
+  background: #272f45;
+  color: #ffffff;
+  border: 3px solid #82c9d8;
+  font-family: "LeagueSpartan";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.subscribe-form input[type="submit"]:hover {
+  text-decoration: underline;
+}
+
+ul.footer-menu {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.footer-menu li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.footer-menu a {
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #92a1a9;
+  padding-right: 36px;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu a:active {
+  text-decoration: none;
+}
+
+.footer-menu li:last-child a {
+  padding-right: 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #92a1a9;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 74px;
+}
+
+.footer-menu li:not(:first-child)::after {
+  width: 5px;
+  height: 5px;
+  background: #92a1a9;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: -22px;
+  content: "";
+}
